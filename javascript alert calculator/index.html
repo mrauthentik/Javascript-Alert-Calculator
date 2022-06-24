@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+ function checker(){
+            let result = confirm("Do want to run an alert calculator")
+            if(result == false){
+                event.preventDefault()
+            }else{
+                
+            }
+        }
+        checker()
+
+        
+            const alert1 = +( prompt("Input your first number"))
+            const alert2 = +(prompt("Input your second number"))
+            const question = prompt("input operation e.g * + - /")
+            let   result = 0              
+                    if(question == "+"){
+                        result = alert1 + alert2; 
+                    
+                    }else if(question ==  "-") {
+                        result = alert1 - alert2; 
+                        
+                    }else if(question ==  "*") {
+                        result = alert1 * alert2; 
+                        
+                    }else if(question == "/"){
+                        result = alert1 / alert2;
+                       
+                    }else if(question == null || " "){
+                        alert('pls input an operation e.g "* + - /"')
+                    }else{
+                        event.preventDefault()
+                    }
+                    alert(result)
+   
+ 
+
+
+
+   
+    </script>
+</body>
+</html>
